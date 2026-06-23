@@ -1,5 +1,240 @@
-<html>
-	<head><title>Coming soon...</title></head>
-	<body>welcome to my page.<br/>this page is underconstruction. visit my twitter profile till then 
-<a href="http://twitter.com/KishoreK">techlona</a></body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kishore K - Engineer & Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --bg-card: #ffffff;
+      --text: #1c1917;
+      --text-secondary: #57534e;
+      --accent: #b45309;
+      --accent-light: #fef3c7;
+      --border: #e7e5e4;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    header { margin-bottom: 4rem; }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .logo-icon { font-size: 1.5rem; color: var(--accent); }
+    .logo-text { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.03em; }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .links a:hover { text-decoration: underline; }
+
+    .section { margin-bottom: 3rem; }
+
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+
+    .card-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .card-desc { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; }
+    .card-meta { margin-top: 0.75rem; font-size: 0.7rem; color: var(--text-secondary); }
+
+    .book-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .book-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+
+    .book-card-meta {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .book-card-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .book-card-desc { color: var(--text-secondary); font-size: 0.875rem; line-height: 1.5; }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .container { padding: 2rem 1.25rem; }
+      h1 { font-size: 1.75rem; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <span class="logo-icon">&#9672;</span>
+        <span class="logo-text">Kishore K</span>
+      </div>
+      <h1>Engineer & Builder</h1>
+      <p class="subtitle">Building tools, books, and experiments at the intersection of AI and developer tooling.</p>
+      <div class="links">
+        <a href="https://twitter.com/KishoreK" target="_blank">Twitter &#8599;</a>
+        <a href="https://github.com/kishorek" target="_blank">GitHub &#8599;</a>
+        <a href="https://kishorek.github.io/ai-books/" target="_blank">AI Books &#8599;</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">AI Books</h2>
+      <div class="card-grid">
+        <a href="https://kishorek.github.io/ai-books/book.html#agentic_ai_book" class="book-card" target="_blank">
+          <div class="book-card-meta">15 Chapters &middot; 82 Diagrams</div>
+          <div class="book-card-title">Agentic AI</div>
+          <div class="book-card-desc">Architecture, state management, multi-agent design, reliability engineering, and enterprise governance.</div>
+        </a>
+        <a href="https://kishorek.github.io/ai-books/book.html#GenAI%20Applications" class="book-card" target="_blank">
+          <div class="book-card-meta">21 Chapters &middot; 69 Diagrams</div>
+          <div class="book-card-title">GenAI Applications</div>
+          <div class="book-card-desc">LLM fundamentals, prompt engineering, production architecture, multimodal AI, and enterprise GenAI systems.</div>
+        </a>
+        <a href="https://kishorek.github.io/ai-books/book.html#RAG" class="book-card" target="_blank">
+          <div class="book-card-meta">17 Chapters &middot; 43 Diagrams</div>
+          <div class="book-card-title">RAG</div>
+          <div class="book-card-desc">Chunking, embeddings, vector DBs, agentic RAG, and production deployment.</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Recent Projects</h2>
+      <div class="card-grid">
+        <a href="https://github.com/kishorek/openscreen" class="card" target="_blank">
+          <div class="card-title">OpenScreen</div>
+          <div class="card-desc">Open-source screen recording tool. No subscriptions, no watermarks, free for commercial use. Alternative to Screen Studio.</div>
+          <div class="card-meta">macOS &middot; Swift</div>
+        </a>
+        <a href="https://github.com/kishorek/comparesv" class="card" target="_blank">
+          <div class="card-title">CompareSV</div>
+          <div class="card-desc">CSV Comparison on Steroids. Fast, visual diff for CSV files with intelligent mismatch detection.</div>
+          <div class="card-meta">Python &middot; CLI</div>
+        </a>
+        <a href="https://github.com/kishorek/azure-ai-assistant" class="card" target="_blank">
+          <div class="card-title">Azure AI Assistant</div>
+          <div class="card-desc">Chrome extension for Azure AI Studio. Streamline AI workflow with integrated tools.</div>
+          <div class="card-meta">Chrome Extension &middot; TypeScript</div>
+        </a>
+        <a href="https://github.com/kishorek/Context-Engineering" class="card" target="_blank">
+          <div class="card-title">Context-Engineering</div>
+          <div class="card-desc">Frontier handbook for context design, orchestration, and optimization. Inspired by Karpathy and 3Blue1Brown.</div>
+          <div class="card-meta">Documentation &middot; Open Source</div>
+        </a>
+        <a href="https://github.com/kishorek/samsung-tv-remote" class="card" target="_blank">
+          <div class="card-title">Samsung TV Remote</div>
+          <div class="card-desc">Open-source Samsung TV remote control via IP. No TV app required.</div>
+          <div class="card-meta">Node.js &middot; CLI</div>
+        </a>
+        <a href="https://github.com/kishorek/dynamic-font-size-js" class="card" target="_blank">
+          <div class="card-title">Dynamic Font Size</div>
+          <div class="card-desc">JavaScript library for responsive typography based on viewport and container queries.</div>
+          <div class="card-meta">JavaScript &middot; Library</div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Open source &middot; Built with curiosity &middot; <a href="https://github.com/kishorek" target="_blank">GitHub</a></p>
+    </footer>
+  </div>
+</body>
 </html>
