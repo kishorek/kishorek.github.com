@@ -1,0 +1,19 @@
+index.html
+  s_83b49708448be8::t_db6e61002aed21 222-231
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.11",
+  "base_commit_sha": "3a7b5f067d20d00529bba01ed962e69ce3ca9e1c",
+  "prompts": {},
+  "sessions": {
+    "s_83b49708448be8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_10a9beecaffeut832FWNBv7ezu",
+        "model": "minimax-m2.7"
+      },
+      "human_author": "Kishore Kumar Uthirapathy <libcomet@gmail.com>"
+    }
+  }
+}
